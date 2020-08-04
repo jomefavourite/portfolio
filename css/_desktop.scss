@@ -48,6 +48,10 @@
     display: none;
   }
 
+  .blur {
+    filter: blur(0);
+  }
+
   .main {
     .cards {
       display: grid;
