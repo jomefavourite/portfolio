@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -77,8 +79,10 @@ button {
   border: none;
   border-radius: 20px;
   background: linear-gradient(145deg, #5bc6ff, #4da7db);
-  -webkit-box-shadow: 5px 5px 25px #499fd180, -5px -5px 25px #61d2ff59;
-          box-shadow: 5px 5px 25px #499fd180, -5px -5px 25px #61d2ff59;
+  -webkit-box-shadow: 5px 5px 25px #499fd180,
+ -5px -5px 25px #61d2ff59;
+          box-shadow: 5px 5px 25px #499fd180,
+ -5px -5px 25px #61d2ff59;
   border: 2px solid var(--text);
   font-weight: 600;
   cursor: pointer;
@@ -91,8 +95,10 @@ button a {
 
 button:hover {
   background: linear-gradient(145deg, #4da7db, #5bc6ff);
-  -webkit-box-shadow: 5px 5px 25px #499fd180, -5px -5px 25px #61d2ff59;
-          box-shadow: 5px 5px 25px #499fd180, -5px -5px 25px #61d2ff59;
+  -webkit-box-shadow: 5px 5px 25px #499fd180,
+ -5px -5px 25px #61d2ff59;
+          box-shadow: 5px 5px 25px #499fd180,
+ -5px -5px 25px #61d2ff59;
 }
 
 p {
@@ -454,8 +460,10 @@ input:checked[type="checkbox"]::before {
 }
 
 .main .skills__show figure:hover {
-  -webkit-box-shadow: 0 0 10px grey, inset 0 0 10px -8px grey;
-          box-shadow: 0 0 10px grey, inset 0 0 10px -8px grey;
+  -webkit-box-shadow: 0 0 10px grey,
+ inset 0 0 10px -8px grey;
+          box-shadow: 0 0 10px grey,
+ inset 0 0 10px -8px grey;
 }
 
 .main .projects {
@@ -714,6 +722,9 @@ input:checked[type="checkbox"]::before {
   }
   .overlay {
     display: none;
+  }
+  .blur {
+    filter: blur(0);
   }
   .main .cards {
     display: -ms-grid;
