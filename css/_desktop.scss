@@ -1,0 +1,63 @@
+@mixin desktop {
+  @media (min-width: 700px) {
+    @content;
+  }
+}
+
+@include desktop() {
+  .header {
+    font-size: 1.15rem;
+
+    &__nav--contents {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      .nav {
+        position: static;
+        display: flex;
+        padding: 0;
+        background: none;
+        transform: translateX(0);
+        max-width: fit-content;
+        box-shadow: none;
+
+        li + li {
+          margin: 0 0 0 1em;
+        }
+      }
+
+      .hamburger {
+        display: none;
+      }
+    }
+
+    &__contents {
+      position: absolute;
+      top: 30%;
+      transform: translateY(-30%);
+      padding: 0 5px;
+      color: #fff;
+      text-align: center;
+      margin: auto;
+    }
+
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .main {
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+
+      .card {
+        margin-top: 0;
+      }
+    }
+  }
+}
