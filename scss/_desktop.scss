@@ -12,10 +12,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      
+
       .nav {
         position: static;
         display: flex;
+        justify-content: flex-end;
         padding: 0;
         background: none;
         transform: translateX(0);
@@ -41,7 +42,6 @@
       text-align: center;
       margin: auto;
     }
-
   }
 
   .overlay {
